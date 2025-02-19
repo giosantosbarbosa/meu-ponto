@@ -1,15 +1,22 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #3c717c;
-}
-
 .textos-navbar {
-    color: #f5f5f5 !important;
+    color: #aa6f21!important;
+    font-weight: bold!important;
+    margin-left: 10px;
+    margin-right: 10px;    
 }
 
-.textos-navbar:hover {
-    color: #b7b7b7 !important;
+.background-box.active {
+    background-color: #51ff10 !important; /* Cor diferente para destacar */
+    border-radius: 10px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-calcular:hover {
+    background-color: #228000; /* Cor diferente para destacar */
+    border-radius: 10px;
+    transition: 0.8s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
