@@ -46,34 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Exibindo o resultado na interface
         saida2Field.textContent = `${saida2Hora}`;
     });
-});
+    console.log("Script carregado");});
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Script carregado!");
-
-    // Obtém o nome do arquivo da URL
-    let currentPath = window.location.pathname.split("/").pop() || "index.html";
-    console.log("Página detectada:", currentPath);
-
-    // Mapeia os IDs dos links
-    const pages = {
-        "index.html": "inicio",
-        "calculadora.html": "calculadora",
-        "sobre.html": "sobre"
-    };
-
-    // Verifica se a página está no mapeamento
-    if (pages[currentPath]) {
-        let activeItem = document.getElementById(pages[currentPath]);
-        
-        if (activeItem) {
-            console.log("Elemento encontrado:", activeItem);
-            activeItem.parentElement.classList.add("active");
-        } else {
-            console.error("Elemento não encontrado para a página:", currentPath);
-        }
-    } else {
-        console.warn("Página não está no mapeamento:", currentPath);
-    }
-});
