@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let saida2Hora = minutosParaHora(saida2Min);
 
         // Exibindo o resultado na interface
-        saida2Field.textContent = `Horário de saída: ${saida2Hora}`;
+        saida2Field.textContent = `${saida2Hora}`;
     });
 });
 

@@ -27,32 +27,31 @@
   <section class="calculadora">
 
     <!-- Fundo Laranja -->
-    <div class="container rounded text-center d-flex flex-column align-items-center py-1 px-3"
+    <div class="container rounded text-center d-flex flex-column align-items-center justify-content-center py-1 px-3 my-2"
       style="background-color: #aa6f21;">
 
       <!-- Horario devido e carga horária diária -->
-      <div class="my-2 p-3 container rounded d-flex flex-column justify-content-center align-items-center" style="background-color: white;">
+      <div class="my-2 container roundedalign-items-center">
         <div class="calculadora-formmy-5">
           <!-- Imput tempo devido -->
-          <div class="m-2 px-2 rounded align-items-center" style="border: #ff9d00 1px solid;">
-            <p class="fs-6 fw-bold m-1">Quantidade de horas devidas no dia</p>
+          <div class="camposdeimput rounded d-flex flex-column my-2">
+            <p class="fw-bold my-1 py-1">Quantidade de horas devidas no dia</p>
             <div class="input-group input-group-sm" id="carga-horaria">
               <input type="time" class="form-control m-2 rounded text-center" aria-describedby="inputGroup-sizing-sm">
             </div>
           </div>
 
           <!-- Imput Tempo de Trabalho -->
-          <div class="m-2 px-2 d-flex flex-column align-items-center rounded"
-            style="border: #ff9d00 1px solid;">
-            <p class="fs-6 fw-bold m-1">Carga Horária Diária</p>
-            <div class="d-flex flex-row m-2">
-              <div class="form-check mx-3">
+          <div class="camposdeimput d-flex flex-column align-items-center rounded my-2">
+            <p class="fw-bold m-1 p-1">Carga Horária Diária</p>
+            <div class="d-flex flex-row">
+              <div class="form-check p-2 mx-3 camposdeimput-text">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="hora1">
                 <label class="form-check-label" for="flexRadioDefault1">
                   08:48h
                 </label>
               </div>
-              <div class="form-check mx-3">
+              <div class="form-check p-2 mx-3 camposdeimput-text">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="hora2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   08:00h
@@ -62,54 +61,51 @@
           </div>
         </div>
 
-        <!-- Horarios de entradas e saida -->
-        <div class="d-flex flex-row justify-content-center">
+       
         <!-- Hora de entrada-->
-        <div class=" mx-3 rounded align-items-center col-3" style="border: #ff9d00 1px solid;">
-          <p class="fw-bold" style="font-size: 12px;">Horário de entrada</p>
-          <div class="input-group input-group-sm p-1" id="entrada1">
+        <div class="camposdeimput my-2 py-1 rounded align-items-center">
+          <p class="fw-bold m-1 p-1">Horário de entrada</p>
+          <div class="input-group input-group-sm" id="entrada1">
             <input type="time" class="form-control rounded text-center" aria-describedby="inputGroup-sizing-sm">
           </div>
         </div>
 
         <!-- Hora de Saída para Almoço-->
-        <div class="mx-3 rounded align-items-center col-3" style="border: #ff9d00 1px solid;">
-          <p class="fw-bold" style="font-size: 12px;">Horário de saída para almoço</p>
+        <div class="camposdeimput my-2 py-1 rounded align-items-center">
+          <p class="fw-bold m-1 p-1">Horário de saída para almoço</p>
           <div class="input-group input-group-sm p-1" id="saida1">
             <input type="time" class="form-control rounded text-center" aria-describedby="inputGroup-sizing-sm">
           </div>
         </div>
 
         <!-- Hora de Retorno do Almoço-->
-        <div class="mx-3 rounded align-items-center col-3" style="border: #ff9d00 1px solid;">
-          <p class="fw-bold" style="font-size: 12px;">Horário de retorno do almoço</p>
+        <div class="camposdeimput my-2 py-1 rounded align-items-center">
+          <p class="fw-bold m-1 p-1">Horário de retorno do almoço</p>
           <div class="input-group input-group-sm p-1" id="entrada2">
             <input type="time" class="form-control rounded text-center" aria-describedby="inputGroup-sizing-sm">
           </div>
         </div>
       </div>
-    </div>
+   
 
-    <div class="rounded my-1 p-2" style="background-color: #51ff10;">
-      <button type="button" class="btn btn-calcular fw-bold">
+      <!-- Botão Calcular -->
+      <button type="button" class="btn-calcular fw-bold rounded m-1 p-3 border-0">
         Calcular hora que devo sair
       </button>
-    </div>
 
+      <!-- Horario de Saida -->
 
-
-
-    <div class="saida2 my-2 container d-flex flex-column p-1 rounded" style=" background-color: white;">
-      <p class="fw-bold">Horário de saída</p>
-      <div class="retorno-sai2 py-2"></div>
+    <div class="camposdeimput my-2 container d-flex flex-column py-2 rounded" style=" background-color: #ff9d00;">
+      <p class="fw-bold mt-0">Horário de saída</p>
+      <div class="retorno-sai2 my-1 py-1"></div>
     </div>
     </div>
   </section>
 
   <!-- footer -->
-  <footer class="d-flex justify-content-center" style="background-color:#efefef; color: #2c2c2c;">
+  <footer class="d-flex justify-content-center pt-3" style="background-color:#efefef; color: #2c2c2c;">
 
-    <p class="fs-6 fw-light py-3"> © 2025 Produzido por Giovanna Barbosa</p>
+    <p class="fs-6 fw-light"> © 2025 Produzido por Giovanna Barbosa</p>
 
   </footer>
 
